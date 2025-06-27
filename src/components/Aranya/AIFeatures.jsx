@@ -2,9 +2,9 @@ import React from 'react';
 
 function AIFeatures({ vrMode }) {
   return (
-    <section id="ai-features" className="py-16 bg-white/50 rounded max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="ai-features" className="py-16 bg-white/80 rounded max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto px-6">
-        <h3 className="text-4xl font-bold text-center text-gray/80 mb-16">AI-Powered Plant Discovery</h3>
+        <h3 className="text-4xl font-bold text-center text-black/60 mb-16">AI-Powered Plant Discovery</h3>
         <div className="grid md:grid-cols-3 gap-8">
           <div id="image-search-card" className={`bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition ${vrMode ? 'vr-mode' : ''}`}>
             <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mb-6">
