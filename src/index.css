@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.add-to-cart {
+  @apply bg-plant-green text-white py-2 px-4 rounded hover:bg-plant-green hover:text-white;
+}
