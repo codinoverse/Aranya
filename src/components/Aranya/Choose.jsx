@@ -1,7 +1,7 @@
 const Choose = () => {
 
     return <>
-        <section id="benefits-section" class="py-20 backdrop-blur-sm max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="benefits-section" class="py-20 bg-white/90 backdrop-blur-sm">
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
