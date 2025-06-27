@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero({ vrMode }) {
   return (
-    <section id="hero" className="pt-24 pb-16 h-[600px] relative overflow-hidden">
+    <section id="hero" className="pt-24 pb-16 h-[600px] relative overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="absolute inset-0 parallax-leaf">
         <div className="absolute top-10 left-10 w-20 h-20 opacity-20">
           <i className="fas fa-leaf text-6xl text-green-500 transform rotate-45"></i>
