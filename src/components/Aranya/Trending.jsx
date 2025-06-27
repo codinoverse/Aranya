@@ -16,7 +16,7 @@ const Trending = () => {
                             <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-50">
                                 <i class="fa-regular fa-heart text-gray-600"></i>
                             </button>
-                            <div class="absolute top-4 left-4 bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Bestseller</div>
+                            <div class="absolute top-4 left-4 bg-sage text-dark px-3 py-1 rounded-full text-sm font-medium">Bestseller</div>
                         </div>
                         <div class="p-6">
                             <h3 class="font-semibold text-gray-900 mb-2">Monstera Deliciosa</h3>

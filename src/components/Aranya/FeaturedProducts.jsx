@@ -37,7 +37,7 @@ function FeaturedProducts({ vrMode }) {
   ];
 
   return (
-    <section id="featured-products" className="py-16">
+    <section id="featured-products" className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto px-6">
         <h3 className="text-4xl font-bold text-center text-gray-800 mb-16">Featured Collection</h3>
         <div className="grid md:grid-cols-4 gap-8">
