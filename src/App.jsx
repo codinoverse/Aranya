@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from "./components/Aranya/Dashboard";
 import Plantsection from "./components/Plants/Plantssection"
-import Potsdashboard from './components/Pots/PotsDashboard';
+import Potsdashboard from './components/Plants/PotsDashboard';
 
 
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import Header from '../Aranya/Header';
-import Footer from '../Aranya/Footer';
-import PotsSection from '../Pots/PotsSection.jsx';
+import Header from '../Aranya/Header.jsx';
+import Footer from '../Aranya/Footer.jsx';
+import PotsSection from './PotsSection.jsx';
 
 
 
