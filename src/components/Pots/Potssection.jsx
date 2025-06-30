@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const PotCraftCatalog = () => {
+const PotsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState('Ceramic Pots');
   const [favorites, setFavorites] = useState(new Set());
   const [sortBy, setSortBy] = useState('Featured');
@@ -266,4 +266,4 @@ const PotCraftCatalog = () => {
   );
 };
 
-export default PotCraftCatalog;
+export default PotsSection;

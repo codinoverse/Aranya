@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import Header from '../Aranya/Header';
-
 import Footer from '../Aranya/Footer';
-import PotCraftCatalog from './PotsSection';
+import PotsSection from '../Pots/PotsSection';
 
 
 function Potsdashboard() {
@@ -28,7 +27,7 @@ function Potsdashboard() {
         <div className="bg-gradient-to-br from-green-50 to-emerald-100 leaf-bg">
             <Header toggleVrMode={toggleVrMode} />
             <div className='mt-5' style={{marginTop:'66px'}}>
-                <PotCraftCatalog />
+                <PotsSection />
             </div>
             <Footer />
         </div>
