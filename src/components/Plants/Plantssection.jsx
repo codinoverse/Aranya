@@ -26,7 +26,7 @@ const Plantsection = () => {
   return (
     <div className="bg-gradient-to-br from-green-50 to-emerald-100 leaf-bg">
       <Header toggleVrMode={toggleVrMode} />
-      <div className='mt-5' style={{marginTop:'75px'}}>
+      <div className='mt-5' style={{marginTop:'85px'}}>
         <Plantlist />
       </div>
 

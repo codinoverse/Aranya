@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Footer from '../Aranya/Footer';
-import "./Plantlist.css"
+import "./plantlist.css"
 
 function Plantlist() {
   const [vrMode, setVrMode] = useState(false);
