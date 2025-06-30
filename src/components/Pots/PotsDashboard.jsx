@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import Header from '../Aranya/Header';
 import Footer from '../Aranya/Footer';
-// This is correct if the folder is named "Pots" and file is "PotsSection.jsx"
-import PotsSection from './PotsSection.jsx';
+import PotsSection from '../Pots/PotsSection';
 
 
 function Potsdashboard() {
