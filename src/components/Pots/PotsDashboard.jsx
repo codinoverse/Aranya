@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import Header from '../Aranya/Header';
 import Footer from '../Aranya/Footer';
-import PotsSection from '../Pots/PotsSection';
+import PotsSection from '../Pots/PotsSection.jsx';
+
 
 
 function Potsdashboard() {
