@@ -1,0 +1,12 @@
+.newsletter {
+    background-color: rgba(0, 144, 17, 0.762);
+}
+
+.sub-btn {
+    background-color: rgba(19, 86, 13, 0.997);
+    color: white;
+}
+
+.sub-btn:hover {
+    background-color: rgba(25, 62, 22, 0.997);
+}

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import './PotsSection.css'
 
 const PotsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState('Ceramic Pots');
@@ -79,7 +80,7 @@ const PotsSection = () => {
     setSelectedCategory(categoryName);
   };
 
- 
+
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -88,39 +89,37 @@ const PotsSection = () => {
           {/* Sidebar */}
           <aside className="w-80 bg-white rounded-xl shadow-sm p-6 h-fit">
             <h2 className="text-xl font-bold text-gray-900 mb-6">Browse Categories</h2>
-            
+
             <div className="space-y-4">
               {categories.map((category) => (
                 <div
                   key={category.name}
                   onClick={() => handleCategoryClick(category.name)}
-                  className={`category-item p-4 rounded-lg cursor-pointer transition-colors ${
-                    selectedCategory === category.name
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-50 hover:bg-gray-100'
-                  }`}
+                  className={`category-item p-4 rounded-lg cursor-pointer transition-colors ${selectedCategory === category.name
+                    ? 'bg-green-600 text-white'
+                    : 'bg-gray-50 hover:bg-gray-100'
+                    }`}
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
                       <i className={`${category.icon} text-sm mr-3`}></i>
                       <span className="font-medium">{category.name}</span>
                     </div>
-                    <span className={`text-sm px-2 py-1 rounded ${
-                      selectedCategory === category.name
-                        ? 'bg-white bg-opacity-20'
-                        : 'bg-gray-200 text-gray-600'
-                    }`}>
+                    <span className={`text-sm px-2 py-1 rounded ${selectedCategory === category.name
+                      ? 'bg-white bg-opacity-20'
+                      : 'bg-gray-200 text-gray-600'
+                      }`}>
                       {category.count}
                     </span>
                   </div>
                 </div>
               ))}
             </div>
-            
+
             {/* Filters */}
             <div className="mt-8">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Filters</h3>
-              
+
               <div className="filter-section mb-6">
                 <h4 className="text-sm font-medium text-gray-700 mb-3">Size</h4>
                 <div className="space-y-2">
@@ -138,7 +137,7 @@ const PotsSection = () => {
                   </label>
                 </div>
               </div>
-              
+
               <div className="filter-section mb-6">
                 <h4 className="text-sm font-medium text-gray-700 mb-3">Price Range</h4>
                 <div className="space-y-2">
@@ -156,7 +155,7 @@ const PotsSection = () => {
                   </label>
                 </div>
               </div>
-              
+
               <div className="filter-section">
                 <h4 className="text-sm font-medium text-gray-700 mb-3">Features</h4>
                 <div className="space-y-2">
@@ -176,7 +175,7 @@ const PotsSection = () => {
               </div>
             </div>
           </aside>
-          
+
           {/* Main Content */}
           <section className="flex-1">
             <div className="flex justify-between items-center mb-8">
@@ -185,7 +184,7 @@ const PotsSection = () => {
                 <p className="text-gray-600 mt-2">Discover our premium selection of handcrafted {selectedCategory.toLowerCase()}</p>
               </div>
               <div className="flex items-center space-x-4">
-                <select 
+                <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
                   className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-blue-600 focus:border-transparent"
@@ -196,13 +195,13 @@ const PotsSection = () => {
                   <option>Newest First</option>
                 </select>
                 <div className="flex bg-gray-100 rounded-lg p-1">
-                  <button 
+                  <button
                     onClick={() => setViewMode('grid')}
                     className={`p-2 rounded ${viewMode === 'grid' ? 'bg-white shadow-sm' : ''}`}
                   >
                     <i className={`fas fa-th ${viewMode === 'grid' ? 'text-gray-600' : 'text-gray-400'}`}></i>
                   </button>
-                  <button 
+                  <button
                     onClick={() => setViewMode('list')}
                     className={`p-2 rounded ${viewMode === 'list' ? 'bg-white shadow-sm' : ''}`}
                   >
@@ -211,47 +210,46 @@ const PotsSection = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Products Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {products.map((product) => (
                 <div key={product.id} className="product-card bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow p-6">
                   <div className="relative mb-4">
-                    <img 
-                      className="w-full h-48 object-cover rounded-lg" 
-                      src={product.image} 
+                    <img
+                      className="w-full h-48 object-cover rounded-lg"
+                      src={product.image}
                       alt={product.alt}
                     />
-                    <button 
+                    <button
                       onClick={() => toggleFavorite(product.id)}
                       className="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-sm"
                     >
-                      <i className={`fa-heart ${
-                        favorites.has(product.id) 
-                          ? 'fas text-red-500' 
-                          : 'far text-gray-400'
-                      }`}></i>
+                      <i
+                        className={`fa-heart heart-icon ${favorites.has(product.id) ? 'filled' : 'outlined'
+                          }`}
+                      />
                     </button>
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">{product.name}</h3>
                   <p className="text-sm text-gray-600 mb-3">{product.description}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-xl font-bold text-gray-900">${product.price}</span>
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
+                    <button className="Add-btn  px-4 py-2 rounded-lg text-sm font-medium">
                       Add to Cart
                     </button>
                   </div>
                 </div>
               ))}
             </div>
-            
+
             {/* Pagination */}
             <div className="flex justify-center mt-12">
               <div className="flex items-center space-x-2">
                 <button className="px-3 py-2 text-gray-500 hover:text-gray-700">
                   <i className="fas fa-chevron-left"></i>
                 </button>
-                <button className="px-4 py-2 bg-blue-600 text-white rounded-lg">1</button>
+                <button className="px-4 py-2 bg-green-700 text-white rounded-lg">1</button>
                 <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">2</button>
                 <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">3</button>
                 <button className="px-3 py-2 text-gray-500 hover:text-gray-700">

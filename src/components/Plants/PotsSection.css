@@ -1,0 +1,50 @@
+.Add-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Add-btn:hover {
+    background-color: rgb(2, 104, 2);
+    transform: scale(1.03);
+}
+
+.Add-btn:active {
+    background-color: rgb(1, 80, 1);
+    transform: scale(0.98);
+}
+
+.Add-btn:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.heart-icon {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.heart-icon.filled {
+    color: #ef4444;
+}
+
+.heart-icon.outlined {
+    font-weight: 400;
+    color: #af9c9c;
+}
+
+.heart-icon:hover {
+    transform: scale(1.1);
+    color: #f51900;
+}
