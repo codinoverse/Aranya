@@ -12,8 +12,8 @@ function Header({ toggleVrMode }) {
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <Link to={"/"}><span className="text-gray-700 hover:text-green-600 transition cursor-pointer">Home</span></Link>
-            <Link to={"plants"}><span className="text-gray-700 hover:text-green-600 transition cursor-pointer">Plants</span></Link>
-            <span className="text-gray-700 hover:text-green-600 transition cursor-pointer">Pots</span>
+            <Link to={"/plants"}><span className="text-gray-700 hover:text-green-600 transition cursor-pointer">Plants</span></Link>
+            <Link to={"/pots"}><span className="text-gray-700 hover:text-green-600 transition cursor-pointer">Pots</span></Link>
             <span className="text-gray-700 hover:text-green-600 transition cursor-pointer">Care</span>
             <span className="text-gray-700 hover:text-green-600 transition cursor-pointer">About</span>
           </nav>

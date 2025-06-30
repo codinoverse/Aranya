@@ -29,7 +29,7 @@ const Plantsection = () => {
       <div className='mt-5' style={{marginTop:'75px'}}>
         <Plantlist />
       </div>
-
+      
     </div>
   );
 }
