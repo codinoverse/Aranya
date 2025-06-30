@@ -1,12 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
-        'plant-green': '#2f855a',
+        "plant-green": "#2D7D32",
+        "plant-light": "#4CAF50",
+        "plant-accent": "#8BC34A"
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif']
+      }
     },
   },
   plugins: [],
-};
+}
